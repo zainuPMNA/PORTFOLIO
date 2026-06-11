@@ -122,21 +122,47 @@ document.addEventListener('DOMContentLoaded', () => {
             const message = document.getElementById('form-message').value.trim();
 
             if (name && email && subject && message) {
-                // Simulate form submission
                 const submitBtn = document.getElementById('btn-submit-form');
                 const origBtnText = submitBtn.innerHTML;
                 
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
-                setTimeout(() => {
-                    // Reset form and show modal
+                // URL to Google Forms formResponse endpoint
+                const formUrl = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc7qhFESOly3HqU3_TwW8k61uB1dX912OtcOb_Wuqu78SLkQw/formResponse";
+                
+                // Construct URL-encoded form data parameters
+                const formData = new URLSearchParams();
+                formData.append("entry.429891072", name);       // NAME
+                formData.append("entry.456961483", email);      // Email
+                formData.append("entry.2078815239", `Subject: ${subject}\n\nMessage:\n${message}`); // Message
+                formData.append("fvv", "1");
+                formData.append("pageHistory", "0");
+                formData.append("fbzx", "7722246556921670744");
+
+                fetch(formUrl, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: formData.toString()
+                })
+                .then(() => {
+                    // Reset form and show success modal
                     contactForm.reset();
                     submitBtn.disabled = false;
                     submitBtn.innerHTML = origBtnText;
-
                     successModal.classList.add('active');
-                }, 1200);
+                })
+                .catch((error) => {
+                    console.error('Submission error:', error);
+                    // Fallback to still showing the modal to the user
+                    contactForm.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = origBtnText;
+                    successModal.classList.add('active');
+                });
             }
         });
     }
