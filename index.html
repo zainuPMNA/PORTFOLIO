@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Zainul Abid.M - Passionate Physics Educator, Mathematical Physics Specialist, and Data Science/Machine Learning Enthusiast based in Calicut, India.">
+    <title>Zainul Abid.M | Physics Educator & Data Scientist</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Canvas for Physics/Data Wave Background -->
+    <canvas id="quantum-bg"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="logo-link">
+                zainul<span class="logo-accent">abid</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-menu" id="nav-links">
+                <a href="#about" class="nav-link" id="link-about">About & Edu</a>
+                <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                <a href="#experience" class="nav-link" id="link-experience">Experience</a>
+                <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+                <a href="#services" class="nav-link" id="link-services">Services</a>
+                <a href="#contact" class="nav-link contact-btn" id="link-contact">Contact Me</a>
+            </nav>
+        </div>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scroll-progress-indicator"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-badge reveal" id="hero-status-badge">
+                    <span class="pulse-dot"></span> Physics Educator & Data Scientist
+                </div>
+                <h1 class="hero-title reveal" id="hero-main-title">
+                    Bridging <span class="gradient-text">Physical Sciences</span> & <span class="gradient-text-alt">Data Intelligence</span>
+                </h1>
+                <p class="hero-subtitle reveal" id="hero-description-paragraph">
+                    Hello, I'm Zainul Abid.M. Currently based in Calicut, India, I combine mathematical physics with machine learning to inspire students and build smart educational solutions.
+                </p>
+                <div class="hero-actions reveal" id="hero-action-buttons">
+                    <a href="#projects" class="btn btn-primary" id="hero-btn-portfolio">Explore Projects</a>
+                    <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator" id="scroll-down-icon">
+                <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+                <span class="arrow-down"></span>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="section-header reveal" id="about-section-header">
+                    <span class="section-subtitle">Biography</span>
+                    <h2 class="section-title">About Me & Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Bio Text -->
+                    <div class="about-bio reveal" id="about-bio-text">
+                        <p class="lead">
+                            My professional journey is defined by a deep-seated enthusiasm for the sciences, specifically mathematical physics, which I uniquely combine with advanced technical proficiencies in machine learning and data science.
+                        </p>
+                        <p>
+                            My core mission is to inspire students and deliver highly impactful, engaging educational experiences through the use of innovative and modern teaching methodologies. I believe that understanding the cosmos requires both the rigorous laws of physics and the analytical power of modern data tools.
+                        </p>
+                        <p>
+                            With an academic foundation spanning physical sciences and information management, I bring a unique multi-disciplinary lens to both secondary education and technical project execution.
+                        </p>
+                    </div>
+
+                    <!-- Education timeline -->
+                    <div class="education-timeline reveal" id="education-timeline-container">
+                        <h3 class="timeline-title"><i class="fas fa-graduation-cap"></i> Academic Background</h3>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-badge"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">In Progress</span>
+                                    <h4>Master of Science (MSc Physics)</h4>
+                                    <p class="timeline-inst">Indira Gandhi National Open University (IGNOU)</p>
+                                    <p class="timeline-desc">Expanding academic horizons and deepening subject matter expertise in core physical sciences and mathematical frameworks.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-badge"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Completed</span>
+                                    <h4>Diploma in Data Science & Machine Learning</h4>
+                                    <p class="timeline-inst">National Skill Development Corporation, Kerala</p>
+                                    <p class="timeline-desc">Specialized training in computational analysis, machine learning algorithms, and deep neural network frameworks.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-badge"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Completed</span>
+                                    <h4>Master of Library & Information Science (M.Lib.I.Sc)</h4>
+                                    <p class="timeline-inst">Central University of Haryana, Mahendragarh</p>
+                                    <p class="timeline-desc">Strengthened skills in information consultancy, advanced research methodologies, and system organization.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-badge"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Completed</span>
+                                    <h4>Bachelor of Science (BSc Physics)</h4>
+                                    <p class="timeline-inst">University of Calicut, Kerala</p>
+                                    <p class="timeline-desc">Undergraduate foundation in classical mechanics, thermodynamics, electromagnetism, and laboratory experimental procedures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Expertise Section -->
+        <section class="skills-section" id="skills">
+            <div class="section-container">
+                <div class="section-header reveal" id="skills-section-header">
+                    <span class="section-subtitle">Proficiencies</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Physics & Education -->
+                    <div class="skill-card glass reveal" id="skill-cat-education">
+                        <div class="skill-icon-box">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h3>Physics & Education</h3>
+                        <ul class="skill-list">
+                            <li><span>Physics Instruction</span><div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div></li>
+                            <li><span>Mathematical Physics</span><div class="skill-bar"><div class="skill-level" style="width: 88%;"></div></div></li>
+                            <li><span>Curriculum Development</span><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div></li>
+                            <li><span>Academic Coordination</span><div class="skill-bar"><div class="skill-level" style="width: 92%;"></div></div></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Technical & Computational -->
+                    <div class="skill-card glass reveal" id="skill-cat-technical">
+                        <div class="skill-icon-box">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Technical & Computational</h3>
+                        <ul class="skill-list">
+                            <li><span>Python Programming</span><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></li>
+                            <li><span>Machine Learning & NLP</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div></li>
+                            <li><span>Data Science / Pandas</span><div class="skill-bar"><div class="skill-level" style="width: 82%;"></div></div></li>
+                            <li><span>MS Office Suite</span><div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: Creative & Media -->
+                    <div class="skill-card glass reveal" id="skill-cat-creative">
+                        <div class="skill-icon-box">
+                            <i class="fas fa-photo-film"></i>
+                        </div>
+                        <h3>Creative & Media</h3>
+                        <ul class="skill-list">
+                            <li><span>Educational Content Creation</span><div class="skill-bar"><div class="skill-level" style="width: 92%;"></div></div></li>
+                            <li><span>Video Editing</span><div class="skill-bar"><div class="skill-level" style="width: 88%;"></div></div></li>
+                            <li><span>Academic Presentations</span><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div></li>
+                            <li><span>Poster Design</span><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4: Info & Languages -->
+                    <div class="skill-card glass reveal" id="skill-cat-languages">
+                        <div class="skill-icon-box">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Linguistic & Info Science</h3>
+                        <ul class="skill-list">
+                            <li><span>Information Consultancy</span><div class="skill-bar"><div class="skill-level" style="width: 88%;"></div></div></li>
+                            <li><span>English (Full Professional)</span><div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div></li>
+                            <li><span>Hindi (Professional Working)</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div></li>
+                            <li><span>Malayalam (Native / Bilingual)</span><div class="skill-bar"><div class="skill-level" style="width: 100%;"></div></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="section-container">
+                <div class="section-header reveal" id="experience-section-header">
+                    <span class="section-subtitle">Career Path</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="work-timeline">
+                    <!-- Job 1 -->
+                    <div class="work-card glass reveal" id="job-pa-inamdar">
+                        <div class="work-meta">
+                            <span class="work-duration"><i class="far fa-calendar-alt"></i> May 2025 – Present</span>
+                            <span class="work-location"><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+                        </div>
+                        <h3 class="work-role">Coordinator & Physics Teacher</h3>
+                        <h4 class="work-company">PA Inamdar English Medium School and Junior College</h4>
+                        <ul class="work-bullets">
+                            <li>Responsible for coordinating comprehensive academic activities and administrative functions across the institution.</li>
+                            <li>Actively teach physics to junior college students, placing a strong emphasis on building deep conceptual clarity and critical thinking.</li>
+                            <li>Spearhead the development of dynamic curriculum structures and rigorous assessment strategies to improve overall student outcomes.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="work-card glass reveal" id="job-sanjay-ghodawat">
+                        <div class="work-meta">
+                            <span class="work-duration"><i class="far fa-calendar-alt"></i> Apr 2023 – Apr 2025</span>
+                            <span class="work-location"><i class="fas fa-map-marker-alt"></i> Kolhapur, India</span>
+                        </div>
+                        <h3 class="work-role">Physics Teacher (NEET & JEE Foundation)</h3>
+                        <h4 class="work-company">Sanjay Ghodawat International School</h4>
+                        <ul class="work-bullets">
+                            <li>Specialized in rigorous competitive exam preparation for aspiring medical and engineering students.</li>
+                            <li>Designed comprehensive, highly targeted study materials and facilitated intensive practice sessions to ensure entrance test readiness.</li>
+                            <li>Provided conceptual guidance on challenging competitive frameworks in kinematics, thermodynamics, electromagnetism, and modern physics.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="work-card glass reveal" id="job-chegg">
+                        <div class="work-meta">
+                            <span class="work-duration"><i class="far fa-calendar-alt"></i> Aug 2021 – Present</span>
+                            <span class="work-location"><i class="fas fa-globe"></i> Remote / Delhi Office</span>
+                        </div>
+                        <h3 class="work-role">Q&A Expert of Physics</h3>
+                        <h4 class="work-company">Chegg India Pvt. Ltd.</h4>
+                        <ul class="work-bullets">
+                            <li>Provide expert, step-by-step solutions to complex mathematical physics, quantum theory, and mechanics problems for a global audience.</li>
+                            <li>Consistently maintain rigorous academic quality standards and high rating thresholds for educational content delivery.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="work-card glass reveal" id="job-raza-ul-uloom">
+                        <div class="work-meta">
+                            <span class="work-duration"><i class="far fa-calendar-alt"></i> Aug 2019 – Mar 2021</span>
+                            <span class="work-location"><i class="fas fa-map-marker-alt"></i> Poonch, J&K</span>
+                        </div>
+                        <h3 class="work-role">Physics Teacher & Librarian</h3>
+                        <h4 class="work-company">Raza-ul-Uloom Islamia Hr. Sec. School</h4>
+                        <ul class="work-bullets">
+                            <li>Managed a dual responsiblity role, overseeing comprehensive library operations while simultaneously leading school-wide physics instruction.</li>
+                            <li>Actively implemented forward-thinking technology solutions to create an enhanced, modern learning and resource search experience for students.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 5 -->
+                    <div class="work-card glass reveal" id="job-perinthalmanna">
+                        <div class="work-meta">
+                            <span class="work-duration"><i class="far fa-calendar-alt"></i> Apr 2017 – Jul 2019</span>
+                            <span class="work-location"><i class="fas fa-map-marker-alt"></i> Kerala, India</span>
+                        </div>
+                        <h3 class="work-role">Physics Teacher</h3>
+                        <h4 class="work-company">Perinthalmanna Educational Institutions</h4>
+                        <ul class="work-bullets">
+                            <li>Built foundational teaching experience in secondary education, developing core instructional skills and classroom management techniques.</li>
+                            <li>Successfully motivated young learners towards opting for sciences in higher education through practical experiments and demonstrations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notable Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-header reveal" id="projects-section-header">
+                    <span class="section-subtitle">Interdisciplinary Tech</span>
+                    <h2 class="section-title">Notable Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass reveal" id="project-sentiment-analysis">
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-chart-line project-bg-icon"></i>
+                            <span class="project-tag">Data Science</span>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-date">Jan 2022 – Jun 2022</span>
+                            <h3>Sentiment Analysis of Instagram Comments</h3>
+                            <p>Developed a sophisticated Natural Language Processing (NLP) system to analyze library science-related social media posts, extracting valuable insights regarding user engagement and behavioral feedback patterns through Python frameworks.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>Data Analysis</span>
+                                <span>NLTK</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass reveal" id="project-arduino-python">
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-microchip project-bg-icon"></i>
+                            <span class="project-tag">Hardware & Coding</span>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-date">Oct 2019 – Jan 2020</span>
+                            <h3>Arduino-Python Bluetooth Lab Enhancement</h3>
+                            <p>Conceptualized, designed, and executed an integrated hardware-software system operating at a 2.5 GHz Bluetooth frequency. This system ensured seamless wireless connectivity and significantly enhanced the scientific capabilities of the school's audio laboratory.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Arduino</span>
+                                <span>Bluetooth (2.5 GHz)</span>
+                                <span>Hardware Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="section-container">
+                <div class="section-header reveal" id="services-section-header">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">Professional Services</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card glass reveal" id="service-physics-coaching">
+                        <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>NEET & JEE Physics Prep</h3>
+                        <p>Specialized, intensive training for engineering and medical entrance tests. Focus on numerical problem-solving speed, accuracy, and core theoretical fundamentals.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass reveal" id="service-curriculum-design">
+                        <div class="service-icon"><i class="fas fa-book-open"></i></div>
+                        <h3>Curriculum & Content Design</h3>
+                        <p>Developing robust, modern curricula, assessment methodologies, and structured study aids for educational institutions seeking digital upgrades.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass reveal" id="service-data-science">
+                        <div class="service-icon"><i class="fas fa-square-root-variable"></i></div>
+                        <h3>Data Analysis & ML Coding</h3>
+                        <p>Consultancy on computational physics projects, educational data mining, NLP analysis for libraries or institutions, and customized Python script engineering.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card glass reveal" id="service-media-creation">
+                        <div class="service-icon"><i class="fas fa-video"></i></div>
+                        <h3>Educational Content Creation</h3>
+                        <p>Designing interactive academic presentation slides, promotional poster campaigns, and editing physics/science lab visual animations for student engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-header reveal" id="contact-section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Zainul</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Panel -->
+                    <div class="contact-info glass reveal" id="contact-details-panel">
+                        <h3>Connect with Me</h3>
+                        <p>Let's collaborate on educational coordination, physics lectures, competitive exam resources, or machine learning applications in research.</p>
+                        
+                        <div class="info-details">
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <label>Email Address</label>
+                                    <a href="mailto:zainulabidm.physics@gmail.com">zainulabidm.physics@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <label>Location</label>
+                                    <span>Calicut, Kerala, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/zainulabidm" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/zainulabidm" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                            <a href="mailto:zainulabidm.physics@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container glass reveal" id="contact-form-wrapper">
+                        <form id="portfolio-contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Full Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Collaboration / Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Your Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="btn-submit-form">
+                                Send Message <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                zainul<span class="logo-accent">abid</span>
+            </div>
+            <p class="footer-quote">"Physics is the language in which God has written the universe; data science is how we decipher its patterns."</p>
+            <p class="copyright">&copy; 2026 Zainul Abid.M. All Rights Reserved. Crafted for Quantum and Data Excellence.</p>
+        </div>
+    </footer>
+
+    <!-- Form Submission Success Notification Modal -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-box">
+            <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out, Zainul will get back to you as soon as possible.</p>
+            <button class="btn btn-primary close-modal-btn" id="btn-close-modal">Close</button>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="index.js"></script>
+</body>
+</html>
