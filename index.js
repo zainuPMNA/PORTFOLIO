@@ -118,10 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Perform simple validation
             const name = document.getElementById('form-name').value.trim();
             const email = document.getElementById('form-email').value.trim();
-            const subject = document.getElementById('form-subject').value.trim();
             const message = document.getElementById('form-message').value.trim();
 
-            if (name && email && subject && message) {
+            if (name && email && message) {
                 const submitBtn = document.getElementById('btn-submit-form');
                 const origBtnText = submitBtn.innerHTML;
                 
@@ -135,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const formData = new URLSearchParams();
                 formData.append("entry.429891072", name);       // NAME
                 formData.append("entry.456961483", email);      // Email
-                formData.append("entry.2078815239", `Subject: ${subject}\n\nMessage:\n${message}`); // Message
+                formData.append("entry.2078815239", message);    // Message
                 formData.append("fvv", "1");
                 formData.append("pageHistory", "0");
                 formData.append("fbzx", "7722246556921670744");
